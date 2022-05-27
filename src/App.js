@@ -2,10 +2,8 @@ import { Component } from 'react';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import { createNote, deleteNote } from './graphql/mutations';
 import { listNotes } from './graphql/queries';
-
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
 
@@ -54,9 +52,7 @@ class NotesList extends Component {
   }
 }
 
-
 class App extends Component  {
-
   constructor(props) {
     super(props);
     this.state = { notes: [] };
@@ -80,7 +76,6 @@ class App extends Component  {
     this.state.notes.push(result.data.createNote);
     this.setState({ notes: this.state.notes });
   }
-
 
   render() {
     return (
