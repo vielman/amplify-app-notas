@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "amplifyappnotas",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Curso\\Ampify\\amplify-app-notas\\amplify\\backend\\api\\amplifyappnotas\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authamplifyappnotas38dd0655"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}
